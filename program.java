@@ -5,22 +5,31 @@ public class program {
     static Scanner scaner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // boolean f = true;
-        // while(f) {
-        //     System.out.println("Task 1 - 1");
-        //     System.out.println("Task 2 - 2");
-        //     System.out.println("Task 3 - 3");
-        //     System.out.println("Task 4 - 4");
-        //     System.out.println("Exit - 5");
-        //     System.out.println("Enter task number = ");
-        //     int task_n = Integer.parseInt(scaner.nextLine());
-        //     if(task_n == 1){
-        //         task1();
-        //     } else if(task_n == 2){
-        //         task2();
-        //     }
-        // }
-        System.out.println(task3());
+        boolean f = true;
+        while(f) {
+            System.out.println("Task 1 - 1");
+            System.out.println("Task 2 - 2");
+            System.out.println("Task 3 - 3");
+            System.out.println("Task 4 - 4");
+            System.out.println("Exit - 5");
+            System.out.println("Enter task number = ");
+            int task_n = Integer.parseInt(scaner.nextLine());
+            if(task_n == 1){
+                task1();
+            } else if(task_n == 2){
+                task2();
+            } else if (task_n == 3){
+                System.out.println(task3());
+            } else if (task_n == 4){
+                System.out.println("My Java level is too small, come back later");
+            } else if (task_n == 5){
+                System.out.println("Exiting...");
+                f = false;
+            } else {
+                System.out.println("Incorrect input, try again!");
+            }
+        } 
+        
     }
 
     static void task1(){
@@ -91,4 +100,14 @@ public class program {
 
     }
     
+    static void task4(){
+        System.out.println("Enter your expression (type x + y = z) ");
+        String exp = scaner.nextLine();
+        String[] exparr = exp.split(" ");
+
+        String first_str = exparr[0]; 
+        String second_str = exparr[2];
+        String sum_str = exparr[4];
+
+    }
 }
