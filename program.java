@@ -7,18 +7,21 @@ public class program {
     public static void main(String[] args) {
         boolean f = true;
         while(f) {
+            System.out.println();
             System.out.println("Task 1 - 1");
             System.out.println("Task 2 - 2");
             System.out.println("Task 3 - 3");
             System.out.println("Task 4 - 4");
             System.out.println("Exit - 5");
             System.out.println("Enter task number = ");
+            System.out.println();
             int task_n = Integer.parseInt(scaner.nextLine());
             if(task_n == 1){
                 task1();
             } else if(task_n == 2){
                 task2();
             } else if (task_n == 3){
+                System.out.println();
                 System.out.println(task3());
             } else if (task_n == 4){
                 System.out.println("My Java level is too small, come back later");
@@ -45,9 +48,11 @@ public class program {
             res2 *=  i;
         }
 
+        System.out.println();
         System.out.printf("Sum 1 to n = %d", res);
         System.out.println();
         System.out.printf("Multiply 1 to n = %d", res2);
+        System.out.println();
 
     }
 
@@ -64,6 +69,7 @@ public class program {
             if(flag)
                 System.out.println(n);
         }
+        System.out.println();
     }
 
     static Object task3(){
